@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Regus</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="icon" href="./images/favicon.ico" />
+  </head>
+  <body>
+    <div class="login-box">
+      <h1 class="linlbl">Login</h1>
+      <form action="./login.php" method="POST">
+        <div class="unamefld">
+          <label for="uname">Username:</label><br />
+          <input type="text" id="uname" name="uname" /><br />
+        </div>
+        <div class="pwdfld">
+          <label for="pwd">Password: </label><br />
+          <input type="password" id="pwd" name="pwd" /><br />
+        </div>
+        <button class="linbtn" onclick="none">Log in</button><br />
+        <span class="supln"><a href="./signup.html">Sign up</a></span>
+      </form>
+    </div>
+  </body>
+</html>

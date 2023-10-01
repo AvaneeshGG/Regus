@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-y: hidden;
+}
+
+body {
+  background-image: url(./images/bg1.jpg);
+  background-size: cover;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(./fonts/OpenSans.ttf);
+}
+
+@font-face {
+  font-family: Allura;
+  src: url(./fonts/Allura-Regular.ttf);
+}
+
+.linlbl {
+  font-size: 66px;
+  font-family: Allura;
+  margin: 16px;
+  padding: 16px 0px;
+  margin-bottom: 0px;
+  margin-left: 32px;
+  padding-bottom: 0px;
+  color: white;
+}
+
+.login-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 480px;
+  height: 576px;
+  margin: 6vw auto;
+}
+
+.unamefld {
+  margin: 16px 0px;
+  margin-left: 16px;
+  font-family: OpenSans;
+}
+
+.pwdfld {
+  margin: 16px 0px;
+  margin-left: 16px;
+  font-family: OpenSans;
+}
+
+#uname {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  transition: border-bottom 0.4s;
+}
+
+label {
+  font-size: 22px;
+  font-family: OpenSans;
+  font-weight: 300;
+  color: white;
+}
+
+input {
+  margin: 16px 0px;
+  font-size: 20px;
+  font-family: OpenSans;
+  color: white;
+  font-weight: 200;
+}
+
+#uname:focus {
+  border-bottom: 2px solid #2196f3;
+  outline: none;
+}
+
+#pwd {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  transition: border-bottom 0.4s;
+}
+
+#pwd:focus {
+  border-bottom: 2px solid #2196f3;
+  outline: none;
+}
+
+form {
+  padding: 16px;
+}
+
+.linbtn {
+  float: right;
+  margin: 0px 32px 0px 0px;
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: #1976d2;
+  font-family: OpenSans;
+  font-weight: 400;
+}
+
+.linbtn:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+.supln a {
+  text-decoration: none;
+  font-size: 18px;
+  opacity: 65%;
+  color: #1976d2;
+  font-family: OpenSans;
+  font-weight: 600;
+  margin-left: 16px;
+  transition: opacity 0.2s;
+}
+
+.supln a:hover {
+  opacity: 100%;
+}
