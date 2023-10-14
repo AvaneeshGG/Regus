@@ -4,8 +4,9 @@
 }
 
 body {
-  background-image: url(./images/bg2.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  transition: background 1s ease;
 }
 
 @font-face {

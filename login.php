@@ -15,11 +15,11 @@ $uname = $_POST['uname'];
 $pwd = $_POST['pwd'];
 
 $uname = stripcslashes($uname);
-$pwd = stripcslasher($pwd);
+$pwd = stripcslashes($pwd);
 $uname = mysqli_real_escape_string($conn, $uname);  
 $pwd = mysqli_real_escape_string($conn, $pwd);
 
-$sql = "select *from login where uname = '$uname' and pwd = '$pwd'"; 
+$sql = "select *from users where uname = '$uname' and pwd = '$pwd'"; 
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 

@@ -1,3 +1,18 @@
+const images = [
+    "images/image1.jpg",
+    "images/image2.jpg",
+    "images/image3.jpg",
+  ];
+
+  let currentIndex = 0;
+
+  function changeBackgroundImage() {
+    document.body.style.backgroundImage = `url('${images[currentIndex]}')`;
+    currentIndex = (currentIndex + 1) % images.length;
+  }
+
+  setInterval(changeBackgroundImage, 10000);
+
 let blockCount = 0;
 let lid = 0;
 
@@ -7,6 +22,8 @@ function abtnclk() {
     newBlock.className = 'block';
     lid++
     newBlock.id = 'list' + lid;
+    newBlock.action = 'text.php';
+    newBlock.method = 'post';
     const blockContainer = document.getElementById('blockContainer');
     blockContainer.appendChild(newBlock);
     blockCount++;
@@ -34,8 +51,9 @@ function abtnclk() {
 
     const newField = document.createElement('input');
     newField.type='text';
-    newField.id='titlefld'
-    newField.className='ltbox'
+    newField.id='titlefld' + lid;
+    newField.name='titlefld' + lid;
+    newField.className='ltbox';
     newField.placeholder = 'Enter title: ';
     newBlock.appendChild(newField);  
     }
